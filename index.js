@@ -24,7 +24,7 @@ app.get('/items/name/:ItemName',(req,res) => {
     const {ItemName} = req.params;
     // includes method use
     const findedItems = items.filter((item)=> {
-        if(item.ItemName.includes(ItemName)){
+        if(item.ItemName.includes(ItemName.toLowerCase()) || item.ItemName.includes(ItemName.toUpperCase())){
             return item
         }
     })
