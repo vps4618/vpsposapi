@@ -1,3 +1,4 @@
 1. remove all other scripts except start script in package.json file
 2. remove all dev dependencies
 3. don't add spaces in procfile
+4. install cors to allow control allow origin.
