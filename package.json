@@ -1,0 +1,18 @@
+{
+  "name": "vpsposapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "engines": {
+    "node":"16.16.0"
+  }
+}
