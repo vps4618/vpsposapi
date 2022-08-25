@@ -104,6 +104,15 @@ app.get('/items/billprice/:BillPrice',(req,res) => {
     res.send(JSON.parse(JSON.stringify(findedItems)));
 })
 
+// get data by item id
+app.get('/items/id/:Id',(req,res) => {
+    const {Id} = req.params;
+    // includes method use
+    const findedItems = items.filter((item)=> {
+        return item == Id;
+    })
+    res.send(JSON.parse(JSON.stringify(findedItems)));
+})
 
 app.listen(port,() => {
     console.log('Server is listening on http://localhost:3000');
