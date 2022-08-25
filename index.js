@@ -11,7 +11,7 @@ app.use(cors({
 }))
 
 app.get('/',(req,res) => {
-    res.send('Welcome to VpsPosApi . Created by VPS . ');
+    res.send('Welcome to VpsPosApi. Created by VPS. ');
 })
 
 //get all data
