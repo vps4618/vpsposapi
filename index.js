@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(cors({
-    origin:"https://vps4618.github.io/",
+    origin:"https://vps4618.github.io",
     methods:["GET"]
 }))
 
