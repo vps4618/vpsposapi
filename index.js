@@ -109,7 +109,7 @@ app.get('/items/id/:Id',(req,res) => {
     const {Id} = req.params;
     // includes method use
     const findedItems = items.filter((item)=> {
-        return item == Id;
+        return item.ITEM_ID == Id;
     })
     res.send(JSON.parse(JSON.stringify(findedItems)));
 })
